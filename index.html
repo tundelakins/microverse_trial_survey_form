@@ -7,13 +7,18 @@
   </head>
 
   <body>
+    ::before
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">
+      freeCodeCamp Survey Form
+    </h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to help us improve the platform
+    </p>
 
-      <h1 id="title">
-        freeCodeCamp Survey Form
-      </h1>
-      <p id="description">
-        Thank you for taking the time to help us improve the platform
-      </p>
+  </header>
+</div>
 
       <form id="survey-form" action="">
 
@@ -23,8 +28,42 @@
         </div>
 
         <div class="form-group">
-          <label for="name" id="name-label">name</label>
-          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
+          <label for="email" id="email-label">email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email">
+        </div>
+
+        <div class="form-group">
+          <label for="number" id="number-label">"age"</label>
+          <span class="clue">optional</span>
+          <input type="number" name="age" id="number" class="form-control" placeholder="Age">
+        </div>
+
+        <div class="form-group">
+          <p>which option best describes you</p>
+          <select name="role" id="dropdown" class="form-control" required>
+            <option disabled selected value>select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="Prefer not to say">Student</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>would you reccomend freecodecamp to a friend</p>
+          <label for="name" id="name-label">
+
+            <input type="radio" name="user-recommend"  value="definitely" class="input-radio"  checked> "Definitely"
+          </label>
+          <label for="name" id="name-label">
+
+            <input type="radio" name="user-recommend"  value="Maybe" class="input-radio"  checked> "Maybe"
+          </label>
+          <label for="name" id="name-label">
+
+            <input type="radio" name="user-recommend"  value="not-sure" class="input-radio"  checked> "Not sure"
+          </label>
         </div>
 
         <div class="form-group">
@@ -33,23 +72,14 @@
         </div>
 
         <div class="form-group">
-          <label for="name" id="name-label">name</label>
-          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
-        </div>
-
-        <div class="form-group">
-          <label for="name" id="name-label">name</label>
-          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
-        </div>
-
-        <div class="form-group">
-          <label for="name" id="name-label">name</label>
-          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
-        </div>
-
-        <div class="form-group">
-          <label for="name" id="name-label">name</label>
-          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
+          <p>What is your favourite feature of freeCodeCamp?</p>
+          <select name="mostlike" id="most-like" class="form-control" required>
+            <option disabled selected value>select an option</option>
+            <option value="Challenges">Challenges</option>
+            <option value="projects">projects</option>
+            <option value="community">community</option>
+            <option value="opensource">Open Source</option>
+          </select>
         </div>
 
         <div class="form-group">
